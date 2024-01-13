@@ -1,0 +1,696 @@
+
+
+<!-- final -->
+
+
+{% load static %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/typicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Acuminpro.css' %}">
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="https://use.typekit.net/mai4fgw.css">
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js" integrity="sha512-LtFUVzpq6tqEDwdFeZR8Kh95D96T4NMdZLgDCiZkLynyhTOSdsdiceIYFs97RY+9HIDI2V8g2hNo6bFNK7i4Tw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js" integrity="sha512-Ekt5wUDNxJ5w4X3+qUnJ9bX2JQ54ZBt+r8UK4sZ8FAEmydtmujECPFHbX9IMsh4Ax4dMafL6kHLxC4HB0lK48A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>  
+
+
+
+</head>
+  <body>
+   
+	<body>
+
+                    <main>
+                        <header  class="frame">
+                          
+                            <div class="frame__title">
+                                <h1 class="frame__title-main">Stack to Content Layout Transition</h1>
+                                <a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=63558">
+                                    <span class="oh__inner">Back to the article</span>
+                                    <svg width="18px" height="18px" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"/></svg>
+                                </a>
+                                <br/>
+                                <a class="frame__title-prev" href="https://tympanus.net/Development/IntroTrailEffect/">Previous demo</a>
+                            </div>
+                            <div class="frame__logo">
+                                <h2 class="frame__logo-title">Jonas Tanaka</h2>
+                                <span class="frame__logo-subtitle">フォトグラフィー</span>
+                            </div>
+                        </header >
+                        <section class="content">
+                            <div class="content__item">
+                                <h2 class="content__item-title">
+                                    <span class="oh"><span class="oh__inner">Queen of </span></span><span class="oh"><span class="oh__inner">the Sea</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Osaka, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">Hidesato felt very sorry for the Dragon King on hearing his story, and readily promised to do what he could to help him.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Hinata's</span></span><span class="oh"><span class="oh__inner">Trouble</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Kyoto, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">His power was immense, for he was the ruler of all sea creatures both great and small, and in his keeping were the Jewels of the Ebb and Flow of the Tide.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Dragon's</span></span><span class="oh"><span class="oh__inner">Journey</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Nagoya, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">Calling all his fish retainers together, he chose several of them as ambassadors to go through the sea and seek for a young Dragon Princess who would be his bride.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Prince</span></span><span class="oh"><span class="oh__inner">Yamato</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Tokyo, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">The King fell in love with her at once, and the wedding ceremony was celebrated with great splendor. </span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Kumaso</span></span><span class="oh"><span class="oh__inner">&amp; Haru</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Sapporo, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">When the hare heard these kind words he felt very grateful to the man, and encouraged by his gentle manner the hare told him all that had befallen him.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Botan's</span></span><span class="oh"><span class="oh__inner">Dream</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Sendai, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">Okuni-nushi-no-Mikoto is worshiped by the people in some parts of Japan, as a god, and the hare has become famous as “The White Hare of Inaba”. </span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">The Gate</span></span><span class="oh"><span class="oh__inner">of Rashoi</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Kyoto, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">Nearly two thousand years ago this sword was kept at the shrines of Ite, the temples dedicated to the worship of Amaterasu, the great and beautiful Sun Goddess from whom the Japanese Emperors are said to be descended.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Faithful</span></span><span class="oh"><span class="oh__inner">Knights</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Kobe, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">At last King Keiko ordered his younger son Prince Yamato to subdue the brigands and, if possible, to rid the land of their evil lives.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Five Colors</span></span><span class="oh"><span class="oh__inner">for Jokwa</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Hiroshima, 1986</strong></p>
+                                    <p class="oh"><span class="oh__inner">There is a story of knightly adventure and daring which explains why the name of the sword was changed from that of Murakumo to Kasanagi, which means grass clearing.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                              <h2 class="content__item-title"><span class="oh"><span class="oh__inner">Shikuyu's</span></span><span class="oh"><span class="oh__inner">Charm</span></span></h2>
+                              <div class="content__item-description">
+                                  <strong class="oh"><span class="oh__inner">Kumamoto, 1986</span></strong>
+                                  <p class="oh"><span class="oh__inner">He at once made ready to start...</span></p>
+                              </div>
+                          </div>
+                          
+                            <button class="content__back unbutton">
+                                <svg aria-hidden="true" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.4939 20.5644C11.1821 20.8372 10.7083 20.8056 10.4356 20.4939L3.43557 12.4939C3.18814 12.2111 3.18814 11.7889 3.43557 11.5061L10.4356 3.50613C10.7083 3.1944 11.1822 3.16281 11.4939 3.43557C11.8056 3.70834 11.8372 4.18216 11.5644 4.49388L5.65283 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L5.65283 12.75L11.5644 19.5061C11.8372 19.8179 11.8056 20.2917 11.4939 20.5644Z"/>
+                                </svg>
+                                <span class="oh__inner">Back</span>
+                            </button>
+                            <nav class="content__nav-wrap">
+                                <button class="content__nav content__nav--prev unbutton">
+                                    <svg width="100" height="267" viewBox="0 0 100 267"><path d="M49.894 2.766v262.979" stroke-linecap="square"/><path fill="none" d="M99.75 76.596C73.902 76.596 52.62 43.07 49.895 0 47.168 43.07 25.886 76.596.036 76.596"/></svg>
+                                </button>
+                                <button class="content__nav content__nav--next unbutton">
+                                    <svg width="100" height="267" viewBox="0 0 100 267"><path d="M49.894 2.766v262.979" stroke-linecap="square"/><path fill="none" d="M99.75 76.596C73.902 76.596 52.62 43.07 49.895 0 47.168 43.07 25.886 76.596.036 76.596"/></svg>
+                                </button>
+                            </nav>
+                        </section>
+                        <div class="slides"></div>
+                        <div class="stack-wrap">
+                            <div class="stack">
+                                <div class="stack__item stack__item--empty"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/1.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/2.jpg' %});"></div>
+                                
+                                <div class="stack__item" style="background-image:url({% static 'images/img/3.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/4.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/5.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/6.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/7.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/8.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/9.jpg' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/10.jpg' %});"></div>
+                                <div class="stack__item stack__item--empty"></div> 
+                            </div>
+                            
+                        </div>
+                        <section class="title">
+                            <h2 class="title__main oh"><span class="oh__inner">Photography</span></span></h2>
+                            <span class="title__sub oh"><span class="oh__inner">1986 &mdash; 2022</span></span>
+                        </section>
+                    </main>
+             
+    
+                    <script src="{% static 'js/gallery.js' %}"></script>
+
+                        
+                    
+</body>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+<!-- ssssssssssssssss -->
+
+
+{% load static %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/typicons.min.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://use.typekit.net/mai4fgw.css">
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>!function () { document.documentElement.className = "js"; var e, t; (t = document.createElement("style")).innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e || alert("Please view this demo in a modern browser that supports CSS Variables.") }();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+  <body>
+    <div style="height: 100vh;">
+        <!-- <div class="hamburg>">
+                <nav role="navigation">
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                            <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul id="menu">
+                            <a href="#cv">
+                            <li>Hello</li></a>
+                            <a href="#aboutme">
+                            <li>About Me</li></a>
+                            <a href="#interest">
+                            <li>My Field of Interest</li></a>
+                            <a href="#schoolp">
+                            <li>School Projects</li></a>
+                            <a href="#work">
+                            <li>My Recent Works</li></a>
+                        </ul>
+                    </div>
+                </nav>
+            </div> -->
+            <!-- <div class="first">
+                <div class="content1">
+                    <h2 class="content1__title no-select">
+                        <span>PORTFOLIO</span>
+                        <span class="content1__title-sub">Jennefer Lee</span>
+                    </h2>
+                    <div class="grid">
+                        <div class="grid__item pos-1">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c5.png' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-2">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/Group1.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-3">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c3.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-4">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-5">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/Group1.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-6">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-7">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c1.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-8">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c3.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-9">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                        </div>
+                        
+                        <div class="grid__item pos-10">
+                            <div class="grid__item-img" style="background-image:url({% static 'images/c5.png' %});"></div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div> -->
+
+            <div class="second text-increase">
+                <div style="background-color:black;">
+                    <!-- 1st -->
+                    <div class="card-group" id="cv" style="width: 100%; height: 100%; background-color: #ffffff; border: none;">
+                        <div class="card text-center" style="background-color: rgba(255, 255, 255, 0); height: 100%; width: 100%; padding: 4%; border: none;">
+                            <div><img src="{% static 'images/me.png' %}" alt="Profile Image" style="max-width:60%" /></div>
+                        </div>
+                        <div class="card text-left" style="background-color: rgba(255, 255, 255, 0); padding: 4%; height: 100%;">
+                            <h1 style="font-family: 'AcuminproBold'; margin-top: -9px; margin-bottom: 16px;">Hey there!</h1>
+                            <p style="margin-bottom: 15px;">I'm <span class="name">Jennefer Lee,</span> a 4th year Bachelor of Science in Information Technology (BSIT) student at Technological Institute of the Philippines.</p>
+            
+                            <p>
+                                I skillfully balance coding with freelance artistry, specifically in graphic design. Picture this: I bring code to life, craft stunning websites, and infuse a creative touch into graphic design! My expertise extends to database management, AI, human-computer interaction, automation, and data analysis.
+                            </p>
+                            <p>
+                                As a team leader, I prioritize demonstrating effective leadership, excelling in team management, staying composed under pressure, and managing time adeptly. I'm recognized for meticulous attention to detail in planning and documentation, significantly contributing to the successful execution of various projects.
+                            </p>
+                            <h1 style="font-family: 'AcuminproBold'; margin-top: -9px; margin-top: 16px;">Get in Touch</h1>
+            
+                            <div class="row">
+                                <!-- First column -->
+                                <div class="col-md-6">
+                                    <a class="nav-link" href="https://www.facebook.com/jennefer.lee.3">
+                                        <i class="icon-social-facebook hover-underline-animation">
+                                            <span class="iconfb"> &nbsp;&nbsp;&nbsp;&nbsp;Facebook</span>
+                                        </i>
+                                    </a>
+                                    <a class="nav-link" href="https://www.linkedin.com/in/jennefer-lee-a31332286">
+                                        <i class="icon-social-linkedin hover-underline-animation">
+                                            <span class="icon">
+                                                &nbsp;&nbsp;Linkedin
+                                            </span>
+                                        </i>
+                                    </a>
+                                    <a class="nav-link" href="https://www.behance.net/jennferlee">
+                                        <i class="icon-social-behance hover-underline-animation">
+                                            <span class="icon">
+                                                &nbsp;&nbsp;Behance
+                                            </span>
+                                        </i>
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a class="nav-link" href="https://github.com/jblqc">
+                                        <i class="icon-social-github hover-underline-animation">
+                                            <span class="icon">
+                                                &nbsp;&nbsp;Github
+                                            </span>
+                                        </i>
+                                    </a>
+                                    <a class="nav-link" href="mailto:jenneferlee23@gmail.com">
+                                        <i class="icon-social-google hover-underline-animation">
+                                            <span class="icon">
+                                                &nbsp;&nbsp;Gmail
+                                            </span>
+                                        </i>
+                                    </a>
+                                    <a class="nav-link" href="Resume.html">
+                                        <i class="icon-paper-plane hover-underline-animation">
+                                            <span class="icon"> &nbsp;&nbsp;My Resume</span>
+                                        </i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next -->
+            <div class="first">
+
+                    <div class="card-group" id="group_one-3">
+                            <div class="item" style="position: relative; display: initial;">
+                            <div class="thumb"  style="width: ;">
+                                                <svg class="distort" width="350" height="450" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="250" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c1.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">My submission for the CITE Banner Competition 2020. This is a representation of a Mythological creature, Hydra.</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">01</p>
+                                                <h3 class="item__meta-title">Hydra</h3>
+                                                <p class="item__meta-detail">CITE Banner Competition</p>
+                                                <p class="item__meta-detail">2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort" width="350" height="450" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter2" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="20" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter2)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c2.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for the competition in the TIP Character Design. This indicates a futuristic character wearing the TIP hoodie that symbolizes innovation and a sci-fi theme</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">02</p>
+                                                <h3 class="item__meta-title">In to the Future</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort" width="350" height="450" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter3" data-type="displacementMap">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0.01 0.005" numOctaves="5" seed="2" result="noise"></feTurbulence>
+                                                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" filterUnits="userSpaceOnUse"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter3)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c3.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for the character design with a theme of Retro Space. This is a girl wearing an astronaut suit and a laser gun. The combination of colors represents retro.</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">03</p>
+                                                <h3 class="item__meta-title">Retro Space</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort" width="350" height="450" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter4" data-type="displacementMap">
+                                                        <feTurbulence type="turbulence" baseFrequency="0.07 0.01" numOctaves="5" seed="2" result="noise"></feTurbulence>
+                                                        <feDisplacementMap in="SourceGraphic" in2="noise" scale="0" xChannelSelector="R" yChannelSelector="B" filterUnits="userSpaceOnUse"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter4)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c4.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for another character design with a theme of Filipino Retro. This shows a Filipina from the future wearing a futuristic gear while wearing a traditional Philippine outfit, going from the past</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">04</p>
+                                                <h3 class="item__meta-title">Panimula</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2022</p>
+                                            </div>
+                                        </div>
+                                        <!-- Add the rest of your items with similar adjustments -->
+                                    </div>
+                                <svg class="cursor" width="40" height="40" viewBox="0 0 40 40">
+                                    <circle class="cursor__inner" cx="20" cy="20" r="10"></circle>
+                                  </svg>
+                  
+            </div>
+           
+
+
+
+                    <!-- 7th -->
+                    <div class="card-group" id="group_one-1" style="width: 100%; background-color: rgb(208,84,0); height: 272%; margin-top: 0px;">
+                        <div class="card" style="background-color: rgba(255,255,255,0); height: 100%; width: 546px; margin-left: -14px;">
+                            <div class="sec" id="work">
+                                <main>
+                                   
+                                    <section class="items">
+                                        <!-- Article 1 -->
+                                        <article class="item item--invert">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/nft.png' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="500" height="800"><circle vector-effect="non-scaling-stroke" cx="250" cy="380" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="" style="color:white">NFT Marketplace</span>
+                                                <span data-splitting="" style="color:white">Firebase & Bootstrap</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row">
+                                                    <a href="https://nft-hci.web.app/" class="hover-underline-animation" style="color:white; margin-bottom:-3px; font-size:14px"><span>Go to demo website.</span></a>
+                                                    <span>Front-end design and Database [Bootstrap and Firebase]</span>
+                                                </span>
+                                                <span class="item__meta-row"><span>March — 2022</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>This project was handled by me and it is built around the features of Firebase. It has an ordering system, realtime update of data from the Firestore, Google Authentication and Ajax functions. It is a responsive website that features Bootstrap 4.5.</p>
+                                                <a class="item__excerpt-link" href="#content-4"><span>Read more</span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 2 -->
+                                        <article class="item">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/Group1.jpg' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="150" cy="400" r="110"></circle></svg>
+                                            </button>
+                                            <h4 class="heading heading--item">
+                                                <span data-splitting="">Learning Management</span>
+                                                <span data-splitting="">System</span>
+                                            </h4>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>Front-end design [Android Studio]</span></span>
+                                                <span class="item__meta-row"><span>October — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>The application simple basic features such as Login Registration, Student Management, Schedules, Activities, and Teachers. The project only focusses on demonstrating the simple functions of a learning management system.</p>
+                                                <a class="item__excerpt-link" href="#content-1"><span>Read more</span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 3 -->
+                                        <article class="item item--invert">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/group2.jpg' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="500" height="800"><circle vector-effect="non-scaling-stroke" cx="250" cy="380" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="">Veterinary Clinic System</span>
+                                                <span data-splitting="">website</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>Front-end design and Database [Visual Studio & Laravel]</span></span>
+                                                <span class="item__meta-row"><span>November — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>This Laravel project demonstrate the use of Laravel charts and database. It offers functions such as registration, login, real-time update of charts for the users of the website using database seeder to populate the users table with sample data to visualize charts more easily.</p>
+                                                <a class="item__excerpt-link" href="#content-2"><span>Read more</span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 4 -->
+                                        <article class="item">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/group3.png' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="170" cy="400" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="">Cafe Ordering System</span>
+                                                <span data-splitting="">application</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>[Android Studio]</span></span>
+                                                <span class="item__meta-row"><span>May — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>A simple ordering mobile application that features add to cart function, registration, and login.</p>
+                                                <a class="item__excerpt-link" href="#content-3"><span>Read more</span></a>
+                                            </div>
+                                        </article>
+                
+                                    </section>
+                
+                                    <section class="content">
+                                        <!-- Content Article 1 -->
+                                        <article class="content__article content__article--invert" id="content-4">
+                                            <h2 class="heading">
+                                                <span data-splitting="">NFT Marketplace</span>
+                                                <span data-splitting="">Firebase & Bootstrap</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p>Realtime update of data is used for the Firestore, and another security function is the Google Authentication. The website shows NFT digital arts and are sold through the ordering system. A database is also used for realtime update of orders in the Product list.</p>
+                                                <div style="width:1000px;height:200px;margin-bottom:100px;margin-left:-230px"><img src="{% static 'images/Untitled.png' %}" alt="Some image"></div>
+                                                <p>It has complete components for forms, Ajax, and JavaScript functions for the animation, filtering of table, and security function.</p>
+                                                <p>Programming Language: HTML, JavaScript, CSS, Firebase, Jquery, Bootstrap</p>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Content Article 2 -->
+                                        <article class="content__article" id="content-1">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Learning</span>
+                                                <span data-splitting="">Management System</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p>The system is accessible for those who do not have access to laptops and other costly materials and fast internet, which is essential in flexible learning, and this application aims to assist the beneficiary in requiring only a mobile phone and 3 MBPS of internet.</p>
+                                                <div style="width:1000px;height:200px;margin-bottom:100px;margin-left:-230px">
+                                                    <img src="{% static 'images/p1.png' %}" style="width:1000px">
+                                                </div>
+                                                <p>Beneficiaries such as the faculty member will have access to learning tools available online such as cloud storage, wherein they can put the modules and avoid the risk of losing essential data. The institution's users will make the distribution of modules and dissemination of information safer because of the threat of Covid-19.</p>
+                                                <p>Programming Language: JavaScript, CSS, Android Studio, Database, SQL</p>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Content Article 3 -->
+                                        <article class="content__article content__article--invert" id="content-2">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Veterinary Clinic</span>
+                                                <span data-splitting="">database</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p>The website is a combination of front-end and back-end which uses Laravel database for populating data using seeders and authentication feature.</p>
+                                                <div style="width:1000px;height:200px;margin-bottom:100px;margin-left:-230px"><img src="{% static 'images/p2.jpg' %}" alt="Some image"></div>
+                                                <p>It has complete components for forms, about us and other details of the Mabuhay Veterinary Clinic.</p>
+                                                <p>Programming Language: HTML, JavaScript, CSS, Laravel, Database, PHP</p>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Content Article 4 -->
+                                        <article class="content__article" id="content-3">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Cafe Ordering</span>
+                                                <span data-splitting="">application</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p>This is an ordering system that includes add to cart function, user registration, and login.</p>
+                                                <div style="width:1000px;height:200px;margin-bottom:100px;margin-left:-230px">
+                                                    <img src="{% static 'images/p3.jpg' %}" alt="Some image">
+                                                </div>
+                                                <p>I am assigned to the making of the mobile application's front-end design, which includes all the component such as the vectors, buttons, and interface.</p>
+                                                <p>Programming Language: JavaScript, CSS, Android Studio , Database</p>
+                                            </div>
+                                        </article>
+                
+                                        <button class="content__back unbutton">
+                                            <svg width="108" height="23"><path stroke="#000" fill="none" d="M107.5 11.5H1.5m0 0c8.975-.536 15.087-1.364 18.336-2.484C23.086 7.896 26.64 5.39 30.5 1.5m-29 10c8.975.536 15.087 1.364 18.336 2.484 3.25 1.12 6.804 3.626 10.664 7.516"></path></svg>
+                                        </button>
+                                    </section>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                    <div >
+
+                   
+                    </div>
+                      <!-- last -->
+                    <div class="card-group" id="group_one-4" style="width: 100%; height: 100%; margin-top: -8px;">
+                        <div class="card" style="background-color: rgba(255,255,255,0); height: 100%; width: 546px; background-image: url('{% static "images/bg.png" %}'); background-size: cover; background-repeat: no-repeat; filter: grayscale(52%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%);">
+                            <div class="text-center" style="height: 223px; filter: blur(0px) grayscale(0%) hue-rotate(0deg) invert(0%) saturate(0%) sepia(0%);">
+                                <h1 class="text-center" id="heading-2" style="font-family: 'AcuminproBold'; font-size: 89px; color: rgb(255,255,255); font-weight: 0; font-style: normal; background-color: rgba(208,84,0,0); height: 70px; line-height: 233px; filter: blur(0px) brightness(200%) invert(0%) saturate(200%) sepia(15%);">Thank You</h1>
+                            </div>
+                        </div>
+                    </div>      
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/index.js' %}"></script>
+    <script src="{% static 'js/demo.js' %}"></script>
+    <script src="{% static 'js/demo2.js' %}"></script>
+    <script src="{% static 'js/bs-init.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/totop.js' %}"></script>
+
+    <script>
+        !function () {
+            document.documentElement.className = "js";
+            var e, t;
+            (t = document.createElement("style")).innerHTML = "root: { --tmp-var: bold; }";
+            document.head.appendChild(t);
+            e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)"));
+            t.parentNode.removeChild(t);
+            e || alert("Please view this demo in a modern browser that supports CSS Variables.");
+        }();
+
+    </script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+{% endblock %}

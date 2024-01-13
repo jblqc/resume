@@ -1,0 +1,409 @@
+
+{% load static %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="{% static 'css/2nd.css' %}">
+        <style>
+
+            @font-face {
+              font-family: 'AcuminPro-BoldItalic';
+              src: url('/static/fonts/AcuminPro-BoldItalic.otf') format('opentype');
+              font-weight: bold;
+              font-style: italic;
+            }
+            
+            @font-face {
+              font-family: 'AcuminPro-Bold';
+              src: url('/static/fonts/AcuminPro-Bold.otf') format('opentype');
+              font-weight: bold;
+              font-style: normal;
+            }
+            
+            @font-face {
+              font-family: 'AcuminPro-BookItalic';
+              src: url('/static/fonts/AcuminPro-BookItalic.otf') format('opentype');
+              font-weight: normal;
+              font-style: italic;
+            }
+            
+            @font-face {
+              font-family: 'AcuminPro';
+              src: url('/static/fonts/AcuminPro.otf') format('opentype');
+              font-weight: normal;
+              font-style: normal;
+            }
+            
+            body {
+                margin: 0;
+                position: relative;
+            
+            font-family: 'AcuminPro', sans-serif;
+              -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            .content1__title {
+              font-family: 'AcuminPro';
+              font-weight: 400;
+              font-size: 10vw;
+              margin: 0;
+              line-height: 1;
+              position: relative;
+              margin-bottom: 20px; /* Adjust as needed */
+            }
+            
+            .content1__title-sub {
+              color: var(--color-content1-title-sub);
+              font-size: 3.5vw;
+              display: block;
+              margin-left: .5vw;
+              line-height: 0.5;
+              font-family: 'AcuminPro';
+            }
+            .icon {
+              font-family: 'AcuminPro';
+              font-size: 15px;
+            }
+            
+            .iconfb {
+              font-family: 'AcuminPro';
+              font-size: 15px;
+              margin-left: -6px;
+            }
+            .heading {
+              font-family: 'AcuminPro-BookItalic';
+              font-weight: 100;
+              font-size: small;
+              line-height: 1.1;
+            }
+            
+            </style>
+</head>
+  <body>
+ 
+
+                    <!-- 7th -->
+                    <div class="card-group" id="group_one-1" style="width: 100%; background-color: rgb(208,84,0); height: 272%; margin-top: 0px;">
+                        <div class="card" style="background-color: rgba(255,255,255,0); height: 100%; width: 546px; margin-left: -14px; border-width: 0cap;">
+                            <div class="sec" id="work">
+                                <main>
+                                  
+                                    <section class="items">
+                                            <!-- Article 5 -->
+                                            <article class="item">
+                                                <div class="item__imgwrap">
+                                                    <div class="item__img" style="background-image:url({% static 'imgs/compare1.png' %})"></div>
+                                                </div>
+                                                <button class="item__enter unbutton">
+                                                    <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="150" cy="400" r="110"></circle></svg>
+                                                </button>
+                                                <h4 class="heading heading--item">
+                                                    <span data-splitting="">NecessiPick: A Product Comparison System</span>
+                                                    <span data-splitting="">Enhancing the Food Retail Industry Employing</span>
+                                                    <span data-splitting="">Data Extraction Frameworks and AI for Data Refinement</span>
+
+                                                </h4>
+                                                <div class="item__meta">
+                                                    <span class="item__meta-row"> <a href="https://necessipick.onrender.com/" class="hover-underline-animation" style="color:white; margin-bottom:-3px; font-size:14px"><span>Go to demo website.</span></a></span>
+
+                                                    <span class="item__meta-row"><span>A Capstone Project</span></span>
+                                                    <span class="item__meta-row"><span>November — 2023</span></span>
+                                                </div>
+                                                <div class="item__excerpt">
+                                                    <p>This study aimed to design a website for comparing supermarket product information in Metro Manila, utilizing web scraped data from Puregold, Waltermart, and Metro Market! Market! and to enchance food retail industry by using AI for data refinement adn geolocation technology.
+                                                    </p>
+                                                    <a class="item__excerpt-link" href="#content-5"><span>Read more</span></a>
+                                                </div>
+                                            </article>
+                    
+                                            <!-- Article 6 -->
+                                            <article class="item item--invert">
+                                                <div class="item__imgwrap">
+                                                    <div class="item__img" style="background-image:url({% static 'imgs/recipe1.png' %})"></div>
+                                                </div>
+                                                <button class="item__enter unbutton">
+                                                    <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="500" height="800"><circle vector-effect="non-scaling-stroke" cx="250" cy="380" r="110"></circle></svg>
+                                                </button>
+                                                <h2 class="heading heading--item">
+                                                    <span data-splitting="">Recipe Management System</span>
+                                                    <span data-splitting="">Using Django and SQLite3</span>
+                                                    <span data-splitting="">with jQuery and Bootstrap</span>
+
+                                                </h2>
+                                                <div class="item__meta">
+                                                    <span class="item__meta-row"><span>Django framework's CRUD (Create, Read, Update, Delete)</span></span>
+                                                    <span class="item__meta-row"><span>May — 2023</span></span>
+                                                </div>
+                                                <div class="item__excerpt">
+                                                    <p>The Django-powered recipe website caters to the need for quick and accessible recipes. Users can easily create, store, and manage recipes, rate others' creations, and navigate a user-friendly interface for basic database tasks. Built with Bootstrap, HTML, Python, and jQuery, it ensures seamless accessibility across devices. The SQLite database and Cloudinary for image storage ensure efficiency and security, with admin/superuser having CRUD access.</p>
+                                                    <a class="item__excerpt-link" href="#content-6"><span>Read more</span></a>
+                                                </div>
+                                            </article>
+                    
+                                            <!-- Article 7 -->
+                                            <article class="item">
+                                                <div class="item__imgwrap">
+                                                    <div class="item__img" style="background-image:url({% static 'imgs/job1.png' %})"></div>
+                                                </div>
+                                                <button class="item__enter unbutton">
+                                                    <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="170" cy="400" r="110"></circle></svg>
+                                                </button>
+                                                <h2 class="heading heading--item">
+                                                    <span data-splitting="">Job Portal: Online Job Posting System</span>
+                                                    <span data-splitting="">for Chowking Fast Food Chain</span>
+                                                </h2>
+                                                <div class="item__meta">
+                                                    <span class="item__meta-row">
+                                                        <span>Laravel, Bootstrap, MySQL, PHP</span></span>
+                                                    <span class="item__meta-row"><span>September — 2022</span></span>
+                                                </div>
+                                                <div class="item__excerpt">
+                                                    <p>The Chowking Job Portal aims to streamline job applications and aid administrators in effective system management, providing a comprehensive solution for job seekers and administrators alike.
+                                                    </p>
+                                                    <a class="item__excerpt-link" href="#content-7"><span>Read more</span></a>
+                                                </div>
+                                                <br><br><br><br>
+                                            </article>
+
+                                        <!-- Article 1 -->
+                                        <article class="item item--invert">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/nft.png' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="500" height="800"><circle vector-effect="non-scaling-stroke" cx="250" cy="380" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="" >NFT Marketplace</span>
+                                                <span data-splitting="" >Firebase & Bootstrap</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row">
+                                                    <a href="https://nft-hci.web.app/" class="hover-underline-animation" style="color:white; margin-bottom:-3px; font-size:14px"><span>Go to demo website.</span></a>
+                                                    <span>Front-end design and Database [Bootstrap and Firebase]</span>
+                                                </span>
+                                                <span class="item__meta-row"><span>March — 2022</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>
+                                                    This project was managed by me and is built around the functionalities of Firebase. It incorporates an ordering system, real-time data updates from Firestore, Google Authentication, and Ajax functions. The website is responsive, utilizing Bootstrap 4.5.</p>
+                                                <a class="item__excerpt-link" href="#content-4"><span>Read more</span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 2 -->
+                                        <article class="item">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/Group1.jpg' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="150" cy="400" r="110"></circle></svg>
+                                            </button>
+                                            <h4 class="heading heading--item">
+                                                <span data-splitting="">Learning Management</span>
+                                                <span data-splitting="">System</span>
+                                            </h4>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>Front-end design [Android Studio]</span></span>
+                                                <span class="item__meta-row"><span>October — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>The application includes basic features like Login Registration, Student Management, Schedules, Activities, and Teachers. The project is specifically designed to showcase the fundamental functions of a learning management system.</p>
+                                                <a class="item__excerpt-link" href="#content-1"><span></span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 3 -->
+                                        <article class="item item--invert">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/group2.jpg' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="500" height="800"><circle vector-effect="non-scaling-stroke" cx="250" cy="380" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="">Veterinary Clinic System</span>
+                                                <span data-splitting="">website</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>Front-end design and Database [Visual Studio & Laravel]</span></span>
+                                                <span class="item__meta-row"><span>November — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>This Laravel project demonstrates the utilization of Laravel charts and a database. It provides features such as registration, login, and real-time chart updates for website users. The database seeder is employed to populate the users' table with sample data, facilitating an easier visualization of charts.</p>
+                                                <a class="item__excerpt-link" href="#content-2"><span></span></a>
+                                            </div>
+                                        </article>
+                
+                                        <!-- Article 4 -->
+                                        <article class="item">
+                                            <div class="item__imgwrap">
+                                                <div class="item__img" style="background-image:url({% static 'images/group3.png' %})"></div>
+                                            </div>
+                                            <button class="item__enter unbutton">
+                                                <svg class="item__enter-circle" vector-effect="non-scaling-stroke" width="100%" height="800"><circle vector-effect="non-scaling-stroke" cx="170" cy="400" r="110"></circle></svg>
+                                            </button>
+                                            <h2 class="heading heading--item">
+                                                <span data-splitting="">Cafe Ordering System</span>
+                                                <span data-splitting="">application</span>
+                                            </h2>
+                                            <div class="item__meta">
+                                                <span class="item__meta-row"><span>[Android Studio]</span></span>
+                                                <span class="item__meta-row"><span>May — 2021</span></span>
+                                            </div>
+                                            <div class="item__excerpt">
+                                                <p>The mobile application is a simple ordering system that incorporates an add-to-cart function, registration, and login features.
+                                                </p>
+                                                <a class="item__excerpt-link" href="#content-3"><span></span></a>
+                                            </div>
+                                        </article>
+                
+                                    </section>
+                
+                                    <section class="content">
+                                        <!-- more -->
+                                        <article class="content__article" id="content-5">
+                                            <h2 class="heading">
+                                                <span data-splitting="">NecessiPick:   A   Product   Comparison   System</span>
+                                                <span data-splitting="">Enhancing   the   Food   Retail   Industry   Employing</span>
+                                                <span data-splitting="" style="font-size: 4vw;">Data Extraction Frameworks and AI for Data Refinement</span>
+
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">The study specifically addresses issues like customer unawareness of rising costs of essential commodities, the absence of a product comparison system for discounts, and insufficient product information in the food retail sector. The integration of effective information channels and a robust monitoring system is crucial for enhancing customer experiences in the grocery retail industry.</p>
+                                                <div style="text-align: center;">
+                                                    <img src="{% static 'imgs/compare2.png' %}" style=" display: block; margin: 0 auto;">
+                                                </div>
+                                                <p style="text-align: justify;">The proposed computing solution utilizes Django for efficient backend management, Bootstrap for a responsive frontend, MongoDB for fast information storage, and Selenium for web scraping. Notably, ChatGPT contributes to generating product descriptions and refining system data.</p>
+                                            </div>
+                                        </article>
+                                        
+                                        
+                
+                                        <!-- Content Article 6 -->
+                                        <article class="content__article content__article--invert" id="content-6">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Recipe Management System</span>
+                                                <span data-splitting="">Using Django and SQLite3</span>
+                                                <span data-splitting="" style="font-size: 4vw;">with jQuery and Bootstrap</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">The Recipe Management Website, built on Django with CRUD operations, offers users a user-friendly platform for creating, managing, and sharing recipes. Featuring a responsive interface, the site includes Recipe, New, and Profile pages. Utilizing Django, SQLite, Bootstrap, HTML, Python, jQuery, and Cloudinary, it ensures efficiency, security, and accessibility. </p>
+                                                <div style="display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'imgs/recipe2.png' %}" alt="Recipe Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">The website offers easy recipe creation, management, and sharing, facilitated by a user-friendly interface and Django's CRUD operation. Its use of Bootstrap, HTML, Python, and jQuery ensures high responsiveness across devices. The efficient SQLite database and secure image storage with Cloudinary enhance the user experience. Admin/superuser access allows for seamless database management through CRUD operations.</p>
+                                            </div>
+                                        </article>
+                                        
+                                        <!-- Content Article 7 -->
+                                        <article class="content__article" id="content-7">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Job Portal: Online Job Posting System</span>
+                                                <span data-splitting="">for Chowking Fast Food Chain</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">This platform serves as an ordering system, featuring essential functions such as the "add to cart" feature, user registration, and login functionality.</p>
+                                                <div style=" display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'imgs/job2.png' %}" alt="Job Portal Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">The Chowking Job Portal is a user-friendly web application facilitating job searches and applications. The homepage offers easy navigation with social media links and a back-to-top button. The portal includes a Job Search feature with Advanced and Branch-specific options. It dynamically lists job positions, displays job details, and showcases Chowking branches.</p>
+                                                <p style="text-align: justify;">Applicants can search for jobs, view details, and apply through a simple form, receiving a confirmation upon submission. Admin functionalities encompass branch, job vacancy, employee, applicant, category, and user management. Admins can efficiently add, edit, or delete information as needed. The system also allows detailed applicant views, feedback sending, and user management.</p>
+                                            </div>
+                                        </article>
+                                        
+
+
+
+
+
+                                        <article class="content__article content__article--invert" id="content-4">
+                                            <h2 class="heading">
+                                                <span data-splitting="">NFT Marketplace</span>
+                                                <span data-splitting="">Firebase & Bootstrap</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">Utilizing a Firestore for real-time data updates and incorporating Google Authentication for enhanced security, the website showcases NFT digital arts available for purchase through the ordering system. A database is employed for real-time updates of orders in the Product list.</p>
+                                                <div style="display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'images/Untitled.png' %}" alt="NFT Marketplace Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">The platform is equipped with comprehensive components for forms, Ajax, and JavaScript functions, enabling features such as animation, table filtering, and enhanced security measures.</p>
+                                                <p style="text-align: justify;">Programming Language: HTML, JavaScript, CSS, Firebase, Jquery, Bootstrap</p>
+                                            </div>
+                                        </article>
+                                        <article class="content__article" id="content-1">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Learning</span>
+                                                <span data-splitting="">Management System</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">The system is designed to be accessible to individuals without laptops or expensive equipment, and in areas with limited internet connectivity. It caters to flexible learning by providing assistance to users who only require a mobile phone and a 3 MBPS internet connection.</p>
+                                                <div style=" display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'images/p1.png' %}" alt="Learning Management System Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">Beneficiaries, including faculty members, gain access to various online learning tools such as cloud storage. This feature enables them to store modules securely, mitigating the risk of losing essential data. The system also facilitates the safer distribution of modules and dissemination of information, especially considering the threat of Covid-19.</p>
+                                                <p style="text-align: justify;">Programming Language: JavaScript, CSS, Android Studio, Database, SQL</p>
+                                            </div>
+                                        </article>
+                                        <article class="content__article content__article--invert" id="content-2">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Veterinary Clinic</span>
+                                                <span data-splitting="">database</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">The website seamlessly integrates both front-end and back-end technologies, utilizing the Laravel database for data population through seeders and implementing authentication features.</p>
+                                                <div style=" display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'images/p2.jpg' %}" alt="Veterinary Clinic Database Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">It boasts comprehensive components for forms, an "About Us" section, and other details pertaining to Mabuhay Veterinary Clinic.</p>
+                                                <p style="text-align: justify;">Programming Language: HTML, JavaScript, CSS, Laravel, Database, PHP</p>
+                                            </div>
+                                        </article>
+                                        <article class="content__article" id="content-3">
+                                            <h2 class="heading">
+                                                <span data-splitting="">Cafe Ordering</span>
+                                                <span data-splitting="">application</span>
+                                            </h2>
+                                            <div class="content__text">
+                                                <p style="text-align: justify;">This platform serves as an ordering system, featuring essential functions such as the "add to cart" feature, user registration, and login functionality.</p>
+                                                <div style=" display: block; margin: 0 auto; margin-bottom: 50px;">
+                                                    <img src="{% static 'images/p3.jpg' %}" alt="Cafe Ordering Application Image" style="width: 100%;">
+                                                </div>
+                                                <p style="text-align: justify;">I am tasked with creating the front-end design of the mobile application, encompassing all components such as vectors, buttons, and the overall interface.</p>
+                                                <p style="text-align: justify;">Programming Language: JavaScript, CSS, Android Studio , Database</p>
+                                            </div>
+                                        </article>
+                                        
+                                        
+                                        
+                                        
+                                        <button class="content__back unbutton">
+                                            <svg width="100" height="23"><path stroke="#000" fill="none" d="M107.5 11.5H1.5m0 0c8.975-.536 15.087-1.364 18.336-2.484C23.086 7.896 26.64 5.39 30.5 1.5m-29 10c8.975.536 15.087 1.364 18.336 2.484 3.25 1.12 6.804 3.626 10.664 7.516"></path></svg>
+                                            <span class="oh__inner">Back</span>
+
+                                        </button>
+                                    </section>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+
+
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{% static 'js/index.6d569464.js' %}"></script>
+
+
+    
+</body>
+</html>
+
+
+
+
+{% endblock %}

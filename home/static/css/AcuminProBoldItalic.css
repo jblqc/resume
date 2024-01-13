@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'AcuminProBoldItalic';
+	src: url('{% static "fonts/Acumin-BdItPro.woff" %}') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}

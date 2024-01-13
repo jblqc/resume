@@ -1,0 +1,6 @@
+@font-face {
+	font-family: 'AcuminPro';
+    src: url('{% static "fonts/Acumin-RPro.woff" %}') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

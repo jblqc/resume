@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'AcuminProItalic';
+	src: url('{% static "fonts/Acumin-ItPro.woff" %}') format('woff');
+
+	font-weight: normal;
+	font-style: normal;
+}

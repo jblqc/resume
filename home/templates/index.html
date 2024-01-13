@@ -1,0 +1,456 @@
+{% load static %}
+{% block content %} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/simple-line-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/typicons.min.css' %}"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Flip.min.js" integrity="sha512-LtFUVzpq6tqEDwdFeZR8Kh95D96T4NMdZLgDCiZkLynyhTOSdsdiceIYFs97RY+9HIDI2V8g2hNo6bFNK7i4Tw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js" integrity="sha512-Ekt5wUDNxJ5w4X3+qUnJ9bX2JQ54ZBt+r8UK4sZ8FAEmydtmujECPFHbX9IMsh4Ax4dMafL6kHLxC4HB0lK48A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>  
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+
+   <!-- update the version number as needed -->
+   <script defer src="/__/firebase/10.7.1/firebase-app-compat.js"></script>
+   <!-- include only the Firebase features as you need -->
+   <script defer src="/__/firebase/10.7.1/firebase-auth-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-database-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-firestore-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-functions-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-messaging-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-storage-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-analytics-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-remote-config-compat.js"></script>
+   <script defer src="/__/firebase/10.7.1/firebase-performance-compat.js"></script>
+   <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+
+</head>
+   
+	<body>
+
+                    <main>
+                      <!-- HAMBURGGGGGGG -->
+                      <div class="hamburg">
+                        <nav role="navigation">
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                    <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <a href="#cv">
+                                    <li>Hello</li></a>
+                                    <a href="#aboutme">
+                                    <li>About Me</li></a>
+                                    <a href="#interest">
+                                    <li>My Field of Interest</li></a>
+                                    <a href="#schoolp">
+                                    <li>School Projects</li></a>
+                                    <a href="#work">
+                                    <li>My Recent Works</li></a>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <!-- PORTFOLIO -->
+                    <div>
+                    <div class="first">
+                      <div class="content1">
+                          <h2 class="content1__title no-select">
+                              <span style="font-family: 'AcuminPro">PORTFOLIO</span>
+                              <span class="content1__title-sub">Jennefer Lee</span>
+                          </h2>
+                          <div class="grid">
+                              <div class="grid__item pos-1">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c5.png' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-2">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/Group1.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-3">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c3.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-4">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-5">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/Group1.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-6">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-7">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c1.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-8">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c3.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-9">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c4.jpg' %});"></div>
+                              </div>
+                              
+                              <div class="grid__item pos-10">
+                                  <div class="grid__item-img" style="background-image:url({% static 'images/c5.png' %});"></div>
+                              </div>
+                          
+                      </div>
+                  </div>
+                  </div>
+                </div>
+                <!-- MY INFO -->
+                
+
+
+                <div class="second container-fluid" style="background-color:rgb(0, 0, 0);">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center justify-content-center">
+                                {% include 'projects/info.html' %}
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="color:#dadada">
+                            <div>
+                                <h3 style="font-family: 'AcuminPro-Bold'; margin-bottom: 16px;">Hey there!</h3>
+                                <p style="margin-bottom: 15px;font-family: 'AcuminPro';">I'm <span class="name">Jennefer Lee,</span> a 4th-year Bachelor of Science in Information Technology (BSIT) student at Technological Institute of the Philippines.</p>
+                
+                                <p style="text-align: justify;font-family: 'AcuminPro';">
+                                    I skillfully balance coding with freelance artistry, specifically in graphic design. Picture this: I bring code to life, craft stunning websites, and infuse a creative touch into graphic design! My expertise extends to database management, AI, human-computer interaction, automation, and data analysis.
+                                </p>
+                                <p style="text-align: justify;font-family: 'AcuminPro';">
+                                    As a team leader, I prioritize demonstrating effective leadership, excelling in team management, staying composed under pressure, and managing time adeptly. I'm recognized for meticulous attention to detail in planning and documentation, significantly contributing to the successful execution of various projects.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+                      <!-- GALLERY FOR  BEHANCE-->
+                    <div class="gallery" style="background-color: black;">
+                        <section class="title">
+                            <h2 class="title__main oh"><span class="oh__inner">Commissions | Designs</span></span></h2>
+                            <span class="title__sub oh"><span class="oh__inner">Browse more on <i class="icon-social-behance" style="margin-top: 4px;"></i></a></span></span>
+                               
+                        </section>
+                        <section class="content">
+                            <div class="content__item">
+                                <h2 class="content__item-title">
+                                    <span class="oh"><span class="oh__inner">F4S INSTAGRAM</span></span><span class="oh"><span class="oh__inner">POST ENTRY</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">F4S Social Post 2022 | Figma, Adobe Photoshop</strong></p>
+                                    <p class="oh"><span class="oh__inner">F4S allows you to analyse a person's characteristics and natural fall backs. This was my entry when I was applying as a Graphic Designer in their company. </span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title">
+                                    <span class="oh"><span class="oh__inner">PROMOTIONAL POST</span></span><span class="oh">SOCIAL MEDIA POST</span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Promotional Post Template 2022 | Figma, Adobe Photoshop</strong></p>
+                                    <p class="oh"><span class="oh__inner">This was a design I created using Figma and Photoshop which serves as a Promtional Post</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">FIDARIO ENVIRONMENTAL DESIGN</span></span><span class="oh"><span class="oh__inner">AND ORIGINAL CHARACTER</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Commission Design | Adobe Photoshop </strong></p>
+                                    <p class="oh"><span class="oh__inner">The illustration showcases a fantasy Tree Village with three sections, highlighting large trees, a bustling marketplace, and the central focus on Fidario, a leshy/ Oak merchant, and his wagon, capturing his desire for nature and unique local ingredients.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">KITTEN GRAPHIC ILLUSTRATION</span></span><span class="oh"><span class="oh__inner">FOR A CLIENT</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Commission Design | Adobe Photoshop</strong></p>
+                                    <p class="oh"><span class="oh__inner">The illustration shows both the original photo of the kitten while the right image shows the final output for the design. The client loved the work and made a positive feedback to the Discord Artist community.</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">FADING LIGHT DISPLAY LOGO DESIGN</span></span><span class="oh"></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner">Zombie Mobile Game Logo Design | Adobe Photoshop </strong></p>
+                                    <p class="oh"><span class="oh__inner">Fading Light Display is an android adventure game that involves zombies. The logo is created by me, from a client request. Learn more by going to my Behance account!</span></p>
+                                </div>
+                            </div>
+                            <div class="content__item">
+                                <h2 class="content__item-title"><span class="oh"><span class="oh__inner">VINCAFE</span></span><span class="oh"><span class="oh__inner">LOGO AND POSTER DESIGN</span></span></h2>
+                                <div class="content__item-description">
+                                    <p class="oh"><strong class="oh__inner"> Experimental Logo and Poster Mockup | Figma, Adobe Photoshop</strong></p>
+                                    <p class="oh"><span class="oh__inner">Vincafe logo and Mockup created as an experimental design using Figma and Adobe Photoshop</span></p>
+                                </div>
+                            </div>
+                          
+                          
+                            <button class="content__back1 unbutton">
+                                <svg aria-hidden="true" width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.4939 20.5644C11.1821 20.8372 10.7083 20.8056 10.4356 20.4939L3.43557 12.4939C3.18814 12.2111 3.18814 11.7889 3.43557 11.5061L10.4356 3.50613C10.7083 3.1944 11.1822 3.16281 11.4939 3.43557C11.8056 3.70834 11.8372 4.18216 11.5644 4.49388L5.65283 11.25L20 11.25C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75L5.65283 12.75L11.5644 19.5061C11.8372 19.8179 11.8056 20.2917 11.4939 20.5644Z"/>
+                                </svg>
+                                <span class="oh__inner">Back</span>
+                            </button>
+                            <nav class="content__nav-wrap">
+                                <button class="content__nav content__nav--prev unbutton">
+                                    <svg width="100" height="267" viewBox="0 0 100 267"><path d="M49.894 2.766v262.979" stroke-linecap="square"/><path fill="none" d="M99.75 76.596C73.902 76.596 52.62 43.07 49.895 0 47.168 43.07 25.886 76.596.036 76.596"/></svg>
+                                </button>
+                                <button class="content__nav content__nav--next unbutton">
+                                    <svg width="100" height="267" viewBox="0 0 100 267"><path d="M49.894 2.766v262.979" stroke-linecap="square"/><path fill="none" d="M99.75 76.596C73.902 76.596 52.62 43.07 49.895 0 47.168 43.07 25.886 76.596.036 76.596"/></svg>
+                                </button>
+                            </nav>
+                        </section>
+                        <div class="slides"></div>
+                        <div class="stack-wrap">
+                            <div class="stack">                                
+
+                                <div class="stack__item" style="background-image:url({% static 'images/img/insta.png' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/post.png' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/fidario.png' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/cat.png' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/skull.png' %});"></div>
+                                <div class="stack__item" style="background-image:url({% static 'images/img/vincafe.png' %});"></div>
+
+                            </div>
+                            
+                        </div>
+                  
+                      </div>
+                       {% include 'projects/project.html' %}
+
+                        <!-- DISTORTT -->
+                    <div class="fourth" style="background-color: rgb(0, 0, 0);">
+                        <div class="card-group" id="group_one-3">
+                            <div class="item" style="position: relative; display: initial;">
+                            <div class="thumb">
+                                                <svg class="distort" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="250" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter)" class="distort__img" x="90" y="50" xlink:href="{% static 'images/c1.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">My submission for the CITE Banner Competition 2020. This is a representation of a Mythological creature, Hydra.</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">01</p>
+                                                <h3 class="item__meta-title">Hydra</h3>
+                                                <p class="item__meta-detail">CITE Banner Competition</p>
+                                                <p class="item__meta-detail">2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter2" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter2)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c2.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for the competition in the TIP Character Design. This indicates a futuristic character wearing the TIP hoodie that symbolizes innovation and a sci-fi theme</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">02</p>
+                                                <h3 class="item__meta-title">In to the Future</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort"  viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter3" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter3)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c3.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for the character design with a theme of Retro Space. This is a girl wearing an astronaut suit and a laser gun. The combination of colors represents retro.</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">03</p>
+                                                <h3 class="item__meta-title">Retro Space</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2021</p>
+                                            </div>
+                                        </div>
+                                        <div class="item" style="position: relative; display: initial;">
+                                            <div class="thumb">
+                                                <svg class="distort" viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                    <filter id="distortionFilter4" data-type="turbulence">
+                                                        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="1" result="warp"></feTurbulence>
+                                                        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="90" in="SourceGraphic"></feDisplacementMap>
+                                                    </filter>
+                                                    <image filter="url(#distortionFilter4)" class="distort__img" x="50" y="50" xlink:href="{% static 'images/c4.jpg' %}" height="350" width="250"></image>
+                                                </svg>
+                                                <figcaption class="thumb__caption">
+                                                    <p class="thumb__caption-title">This is my submission for another character design with a theme of Filipino Retro. This shows a Filipina from the future wearing a futuristic gear while wearing a traditional Philippine outfit, going from the past</p>
+                                                    <p class="thumb__caption-title">[Adobo Photoshop] </p>
+                                                </figcaption>
+                                            </div>
+                                            <div class="item__meta">
+                                                <p class="item__meta-counter">04</p>
+                                                <h3 class="item__meta-title">Panimula</h3>
+                                                <p class="item__meta-detail">Character Design</p>
+                                                <p class="item__meta-detail">2022</p>
+                                            </div>
+                                        </div>
+                                        <!-- Add the rest of your items with similar adjustments -->
+                                    </div>
+                                    <svg class="cursor" width="40" height="40" viewBox="0 0 40 40">
+                                        <circle class="cursor__inner" cx="20" cy="20" r="10"></circle>
+                                      </svg>
+                                      {% include 'projects/info2.html' %}
+
+                    </div>
+
+
+                    </main>
+                    
+                    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+                    <script src="{% static 'js/gallery.js' %}"></script>
+                    <script src="{% static 'js/index.js' %}"></script>
+                    <script src="{% static 'js/demo.js' %}"></script>
+                    <script src="{% static 'js/demo2.js' %}"></script>
+                    <script src="{% static 'js/bs-init.js' %}"></script>
+                    <script src="{% static 'js/totop.js' %}"></script>
+                    <script>
+                        const items = document.querySelectorAll('.item');
+                        const cursor = document.querySelector('.cursor__inner');
+                        const bounds = document.querySelector('.fourth').getBoundingClientRect();
+                      
+                        const getMousePos = (e) => {
+                          return {
+                            x: e.clientX - bounds.left,
+                            y: e.clientY - bounds.top
+                          };
+                        };
+                      
+                        const updateCursor = (pos) => {
+                          gsap.set(cursor, { x: pos.x, y: pos.y });
+                        };
+                      
+                        const updateFilterValues = (filter, strength) => {
+                          filter.setAttribute("baseFrequency", `${strength} ${strength}`);
+                        };
+                      
+                        const enableDistortion = (item) => {
+                          gsap.to(item.querySelector('.distort__img'), {
+                            duration: 0.4,
+                            ease: 'power2.out',
+                            x: 0,
+                            y: 0,
+                            rotationX: 0,
+                            rotationY: 0,
+                            onUpdate: () => {
+                              const filter = item.querySelector("feTurbulence");
+                              if (filter) {
+                                updateFilterValues(filter, 0);
+                              }
+                            }
+                          });
+                        };
+                      
+                        const disableDistortion = (item) => {
+                          gsap.to(item.querySelector('.distort__img'), {
+                            duration: 0.4,
+                            ease: 'power2.out',
+                            x: 0,
+                            y: 0,
+                            rotationX: 0,
+                            rotationY: 0,
+                            onUpdate: () => {
+                              const filter = item.querySelector("feTurbulence");
+                              if (filter) {
+                                updateFilterValues(filter, 0);
+                              }
+                            }
+                          });
+                        };
+                      
+                        const onMouseMove = (e) => {
+                          const mousePos = getMousePos(e);
+                          updateCursor(mousePos);
+                          items.forEach(item => {
+                            const bounds = item.getBoundingClientRect();
+                            const isMouseOverItem =
+                              mousePos.x >= bounds.left &&
+                              mousePos.x <= bounds.right &&
+                              mousePos.y >= bounds.top &&
+                              mousePos.y <= bounds.bottom;
+                      
+                            if (isMouseOverItem) {
+                              const centerX = bounds.left + bounds.width / 2;
+                              const centerY = bounds.top + bounds.height / 2;
+                              const deltaX = mousePos.x - centerX;
+                              const deltaY = mousePos.y - centerY;
+                              const strength = 0.1; // Adjust the strength for a more impactful effect
+                      
+                              gsap.to(item.querySelector('.distort__img'), {
+                                duration: 0.4,
+                                ease: 'power2.out',
+                                x: deltaX * strength,
+                                y: deltaY * strength,
+                                rotationX: deltaY * strength,
+                                rotationY: -deltaX * strength,
+                                onUpdate: () => {
+                                  const filter = item.querySelector("feTurbulence");
+                                  if (filter) {
+                                    updateFilterValues(filter, strength);
+                                  }
+                                }
+                              });
+                            } else {
+                              disableDistortion(item);
+                            }
+                          });
+                        };
+                      
+                        const onMouseLeave = () => {
+                          items.forEach(item => {
+                            disableDistortion(item);
+                          });
+                        };
+                      
+                        document.addEventListener('mousemove', onMouseMove);
+                        document.addEventListener('mouseleave', onMouseLeave);
+                      </script>
+                      
+                      
+                  </div>  
+</body>
+</html>
+{% endblock %}
