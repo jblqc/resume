@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--#o$35w)-g)w$envad79-!9j6d=uibg(hs(ckyc)3f*&gl)efg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'whitenoise.runserver_nostatic',    
 
     'home',
     'projects',
@@ -51,6 +52,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+        'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -129,12 +132,14 @@ USE_TZ = True
 #     BASE_DIR / "static",
 # ]
 
-STATIC_URL = 'static/'
+# STATIC_URL = 'static/'
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+STATIC_URL = "static/"
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Change 'staticfiles' to your desired directory
 
-
-# Default primary key field type
-# https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
+STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
